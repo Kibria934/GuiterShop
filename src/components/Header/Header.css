@@ -1,0 +1,8 @@
+.content {
+  border-bottom: 3px solid rgb(224, 222, 222);
+  margin-left: 20px;
+  transition: 0.8s;
+}
+.content:hover {
+  border-bottom: 3px solid rgb(77, 156, 94);
+}
