@@ -2,8 +2,7 @@
   background-color: antiquewhite;
   min-width: 100%;
   min-height: 100vh;
-  margin-top: 10px;
-  border: 1px solid black;
+  margin-top: 5px;
 }
 .cart-container {
   display: flex;

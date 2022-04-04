@@ -3,8 +3,7 @@ import "./Carts.css";
 
 const Carts = ({ cart }) => {
   // console.log(cart);
-  const { name, id, rating, gender, review } = cart;
-  console.log(cart);
+  const { name, rating, gender, review } = cart;
   return (
     <div>
       <div className="flex justify-center review-cart shadow-xl">

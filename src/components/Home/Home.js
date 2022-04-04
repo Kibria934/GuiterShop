@@ -3,10 +3,10 @@ import HomeReview from "../HomeReview/HomeReview";
 import useCards from "../../hooks/useCards";
 import "./Home.css";
 import { BiArrowFromLeft } from "react-icons/bi";
+import { Link, useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [carts, useCart] = useCards();
-
   return (
     //   Main div
     <div>
@@ -65,11 +65,13 @@ const Home = () => {
         </div>
         <div className="text-center mt-5">
           <button className=" go-btn bg-green-400 px-20 rounded-3xl py-2 font-bold text-black hover:bg-green-700 hover:text-white ">
-            <p className="flex h-full items-center">
-              More Reviews
-              <span className="ml-4 text-2xl">
-                <BiArrowFromLeft></BiArrowFromLeft>
-              </span>
+            <p>
+              <Link to={"/review"} className="flex py-2">
+                More Reviews
+                <span className="ml-4 text-2xl">
+                  <BiArrowFromLeft></BiArrowFromLeft>
+                </span>
+              </Link>
             </p>
           </button>
         </div>

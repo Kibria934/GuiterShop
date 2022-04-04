@@ -9,11 +9,11 @@ const Header = () => {
         <CustomLink className="p-1 ms-1 content " to={"/"}>
           Home
         </CustomLink>
-        <CustomLink className="p-1 ms-1 content " to={"/dashboard"}>
-          Dashboard
-        </CustomLink>
         <CustomLink className="p-1 ms-1 content " to={"/review"}>
           Reviews
+        </CustomLink>
+        <CustomLink className="p-1 ms-1 content " to={"/dashboard"}>
+          Dashboard
         </CustomLink>
         <CustomLink className="p-1 ms-1 content " to={"/about"}>
           About
