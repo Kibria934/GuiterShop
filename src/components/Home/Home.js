@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
-import useReview from "../../hooks/useReview";
 import HomeReview from "../HomeReview/HomeReview";
-import HomeRebiew from "../HomeReview/HomeReview";
+import useCards from "../../hooks/useCards";
 import "./Home.css";
+import { BiArrowFromLeft } from "react-icons/bi";
+
 const Home = () => {
-  //   const [review, setReview] = useReview();
-  //   const [pic, setPic] = useState([]);
-  //   // console.log(review);
-  //   const photo = review.find((one) => one.pic);
-  //   console.log(photo.pic);
+  const [carts, useCart] = useCards();
 
   return (
     //   Main div
@@ -51,8 +48,31 @@ const Home = () => {
         </div>
       </div>
       {/* review section */}
-      <div>
-        <HomeReview></HomeReview>
+
+      <div className="h-[80vh] bg-red-100 ">
+        <h3 className="review-tag mb-10">
+          CUSTOMAR'S{" "}
+          <span className="text-yellow-900">
+            REV<strong>I</strong>EWS
+          </span>
+          (3)
+        </h3>
+
+        <div className="grid md:ml-20 grid-cols-12  md:grid-cols-4 gap-10">
+          {carts.slice(0, 3).map((cart) => (
+            <HomeReview key={cart.id} cart={cart}></HomeReview>
+          ))}
+        </div>
+        <div className="text-center mt-5">
+          <button className=" go-btn bg-green-400 px-20 rounded-3xl py-2 font-bold text-black hover:bg-green-700 hover:text-white ">
+            <p className="flex h-full items-center">
+              More Reviews
+              <span className="ml-4 text-2xl">
+                <BiArrowFromLeft></BiArrowFromLeft>
+              </span>
+            </p>
+          </button>
+        </div>
       </div>
     </div>
   );

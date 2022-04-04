@@ -8,8 +8,6 @@ import Review from "./components/Review/Review";
 import Blogs from "./components/Blogs/Blogs";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
-import { useEffect, useState } from "react";
-import useReview from "./hooks/useReview";
 
 function App() {
   return (

@@ -1,17 +1,7 @@
-.review-tag {
-  color: black;
-  font-family: monospace;
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-}
-.review-tag:hover span {
-  border-bottom: 4px solid rgb(5, 124, 124);
-  transition: 0.2s;
-}
-.review-tag:hover strong {
-  color: rgb(136, 127, 4);
-}
 .card {
-  border: 2px solid black;
+  border-radius: 15px;
+  min-height: 200px;
+  margin-left: 30%;
+  min-width: 400px;
+  padding: 20px;
 }
