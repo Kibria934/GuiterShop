@@ -8,7 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 const Home = () => {
   const [carts, useCart] = useCards();
   return (
-    //   Main div
+    //   Main div...
     <div>
       <div className="flex justify-between h-[85vh] mb-10 items-center">
         {/* left side div */}
